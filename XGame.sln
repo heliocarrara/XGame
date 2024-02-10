@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XGame.Domain", "XGame.Domain\XGame.Domain.csproj", "{68F60725-3967-409E-9FCF-F2C60ED83A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XGame.AppConsole", "XGame.AppConsole\XGame.AppConsole.csproj", "{BF5B82C5-2287-45BC-8E9E-8112930A12AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F60725-3967-409E-9FCF-F2C60ED83A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F60725-3967-409E-9FCF-F2C60ED83A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F60725-3967-409E-9FCF-F2C60ED83A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F60725-3967-409E-9FCF-F2C60ED83A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5B82C5-2287-45BC-8E9E-8112930A12AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5B82C5-2287-45BC-8E9E-8112930A12AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5B82C5-2287-45BC-8E9E-8112930A12AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5B82C5-2287-45BC-8E9E-8112930A12AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18F729F8-049F-417A-B13D-AAD99F3A4711}
+	EndGlobalSection
+EndGlobal
