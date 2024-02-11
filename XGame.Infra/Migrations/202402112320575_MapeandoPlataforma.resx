@@ -117,76 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="A_X0_DEVE_SER_MAIOR_OU_IGUAL_A_X1" xml:space="preserve">
-    <value>A {0} deve ser maior ou igual a {1}.</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1ZzW7jNhC+F+g7CDpnrThBgdaQduG1ncC76ziIkkVvC1oaO2wpUitSgY2iT9ZDH6mv0JFE69+K7ThpkUMsav7nG3KG+uevv+0P64AZTxBJKrhj9nvnpgHcEz7lK8eM1fLdz+aH9z/+YE/8YG183dJdJnTIyaVjPioVDixLeo8QENkLqBcJKZaq54nAIr6wLs7Pf7H6fQtQhImyDMO+i7miAaQP+DgS3INQxYTNhA9M6nV846ZSjRsSgAyJB4756zX+7k35MiK928QeqdBgMI0howTNcYEtTYNwLhRRaOzgQYKrIsFXbogLhN1vQkC6JWEStBODgnxff84vEn+sgnEryoulEsGBAvuXOkBWnf2oMJt5ANPgBiGDdeJ2GkfHvBEBel7XNBixKCHahniMLynvfSUshvniN/CU7CWcZ0b5/VkOCsRO8ndmjGKm4ggcDrGKCDszbuMFo95n2NyL34E7PGasbCHaeBuJECK10QbeRggOGonM0MwozCFi0jRmZP0F+Eo9OuZPCMIrugZ/u6Bz+sApIhh5VBTj4w3qIwsG+XurU/kDQ2i+hWrbKqWmO2MTDDU7LmUp6xvkbMJ9iMATHUFDhL5i1Ca4pahNKWifxArrIto7bKkACrKnGV8jaPiuslCK4x0steFTv4FRq85YD3/Ck/l0HVP/YNBX4I47aC9bOFCKhmlJjF45UI4L/JF0AKl/CiC1qEV4xLJqP48Dl+LJ5BGR4+kZfBZA7ITnLSOKLEUUkMMRWvD+ZyClR4CUnhCkr7Un78peHJT34zZYTOUVI6uitdg7qXHQhrPTZBa9x32ZbTBYme4pV5cXtYTPIFhAlBfxkBNGEw/Sg8QxzxuJqTAMFX0SOXG/m/gjE99jQP9yhotmBrJYN6sH+0SFsciFpQFKFmGtWuKNnZ8OudTJrxqWCXVBVQ8MwC2gQIHeCPIsW90yispsk1Ku+TbY5Q4WHbCVtcDbVtna0SvbMxKGmORS76xXDDdrnEfv3MObySCTYXnS7EhHrkmJiKyg9hZVo6VXNJJqjO4vSAKtkR80yCrp3BHmrap6xuobVhH6LUfyuwSb5giR57gmqwjlFXoXAFepo5DbVLQaDc50hCGMRC3H9UiwOOC7jnzNrZudnTtht0cpXYvYXWZVG++ygdU3babuklnup8sSy+utrls13/cPT6kP6Y5PRniAM0WXW3ZF6zvai1ZVugkq69FLrXraZeiOpiJErzWl2FYN5/WishpVVWsA6mW6VxGXt8xTlHFpkz28kruYd0WZ1oq52Rp1cTcrY1dNvGp+GkdQnSTXnh9FtSPH1tv/83c4jfMgIzENDM0T9ZOzwN1gNoNeQtBzv7MRo+hvQTAjnC5BqqzTwcmyf1G7Afr/3MZYUvqs5fhsGVXffFiMOcV2DCOKFi0pPDfc7HdV80Qi75FEjeb8xRcxJxJcGVNzmY32cYp7/dox/0i5BsbD52+f5tfD8fzu22Q2nH45w4b/IQ3fwLjH5tL4s3nZ8ZK5t83Z/jFCK1MtTaro5APsm8+PL8bti2HVHab6pNLsgPcaRboGkWzPdEx/kdy5ZXYePqU8M6S0KTnBENM8KWyr/E3AHoOkq0JE8oWAg5eUZSF0S4MdgNhmF10sW7QlqSV/Bor46MQwQvQQT+FrD6RMLxT0VDrBmdWf8nmswlgNpcQZlm3K/tpWt/50UqvabM/D5EmewgU0k6ILMOcfY8r83O6rFqTuEJFg8hpwPd3uXIX/YbXJJd0IvqcgHb4xhMCTirwH7HhRmJxzlzzBMbbh6P4FVsTbbA/83UKeT0Q17PaYklVEAqllFPzJdy4r+dD1/l9qTZzwGhsAAA==</value>
   </data>
-	<data name="DADOS_NAO_ENCONTRADOS" xml:space="preserve">
-    <value>Dados não encontrados.</value>
-  </data>
-	<data name="JA_EXISTE_UMA_X0_CHAMADA_X1" xml:space="preserve">
-    <value>Já existe uma {0} chamada {1}.</value>
-  </data>
-	<data name="JA_EXISTE_UMA_X0_COM_A_X1_X2" xml:space="preserve">
-    <value>Já existe uma {0} com a {1} {2}</value>
-  </data>
-	<data name="JA_EXISTE_UMA_X0_COM_O_X1_X2" xml:space="preserve">
-    <value>Já existe uma {0} com o {1} {2}</value>
-  </data>
-	<data name="JA_EXISTE_UM_X0_CHAMADO_X1" xml:space="preserve">
-    <value>Já existe um {0} chamado {1}.</value>
-  </data>
-	<data name="JA_EXISTE_UM_X0_COM_A_X1_X2" xml:space="preserve">
-    <value>Já existe um {0} com a {1} {2}</value>
-  </data>
-	<data name="JA_EXISTE_UM_X0_COM_O_X1_X2" xml:space="preserve">
-    <value>Já existe um {0} com o {1} {2}</value>
-  </data>
-	<data name="NAO_E_POSSIVEL_EXCLUIR_UMA_X0_ASSOCIADA_A_UMA_X1" xml:space="preserve">
-    <value>Não é possível excluir uma {0} associada a uma {1}.</value>
-  </data>
-	<data name="NAO_E_POSSIVEL_EXCLUIR_UMA_X0_ASSOCIADA_A_UM_X1" xml:space="preserve">
-    <value>Não é possível excluir uma {0} associada a um {1}.</value>
-  </data>
-	<data name="NAO_E_POSSIVEL_EXCLUIR_UM_X0_ASSOCIADO_A_UMA_X1" xml:space="preserve">
-    <value>Não é possível excluir um {0} associado a uma {1}.</value>
-  </data>
-	<data name="NAO_E_POSSIVEL_EXCLUIR_UM_X0_ASSOCIADO_A_UM_X1" xml:space="preserve">
-    <value>Não é possível excluir um {0} associado a um {1}.</value>
-  </data>
-	<data name="OBJETO_X0_E_OBRIGATORIO" xml:space="preserve">
-    <value>Objeto {0} é obrigatório.</value>
-  </data>
-	<data name="OPERACAO_REALIZADA_COM_SUCESSO" xml:space="preserve">
-    <value>Operação realizada com sucesso.</value>
-  </data>
-	<data name="O_X0_DEVE_SER_MAIOR_OU_IGUAL_A_X1" xml:space="preserve">
-    <value>O {0} deve ser maior ou igual a {1}.</value>
-  </data>
-	<data name="X0_E_OBRIGATORIA" xml:space="preserve">
-    <value>{0} é obrigatória.</value>
-  </data>
-	<data name="X0_E_OBRIGATORIA_E_DEVE_CONTER_X1_CARACTERES" xml:space="preserve">
-    <value>{0} é obrigatória e deve conter {1} caracteres.</value>
-  </data>
-	<data name="X0_E_OBRIGATORIO" xml:space="preserve">
-    <value>{0} é obrigatório.</value>
-  </data>
-	<data name="X0_E_OBRIGATORIO_E_DEVE_CONTER_X1_CARACTERES" xml:space="preserve">
-    <value>{0} é obrigatório e deve conter {1} caracteres.</value>
-  </data>
-	<data name="X0_INVALIDA" xml:space="preserve">
-    <value>{0} inválida.</value>
-  </data>
-	<data name="X0_INVALIDO" xml:space="preserve">
-    <value>{0} inválido.</value>
-  </data>
-	<data name="X0_NAO_INFORMADO" xml:space="preserve">
-    <value>{0} não informado.</value>
-  </data>
-	<data name="X0_OBRIGATORIA_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES" xml:space="preserve">
-    <value>{0} é obrigatória e deve conter entre {1} e {2} caracteres.</value>
-  </data>
-	<data name="X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES" xml:space="preserve">
-    <value>{0} é obrigatório e deve conter entre {1} e {2} caracteres.</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

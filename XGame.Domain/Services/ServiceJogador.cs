@@ -1,6 +1,8 @@
 ﻿using prmToolkit.NotificationPattern;
 using prmToolkit.NotificationPattern.Extensions;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
 using XGame.Domain.Interfaces.Repositories;
@@ -25,24 +27,21 @@ namespace XGame.Domain.Services
 
         public AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request)
         {
-            var jogador = new Jogador
+            var email = new Email(request.Email);
+            var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+
+            var jogador = new Jogador(nome, email, request.Senha);
+
+            AddNotifications(jogador, nome, email);
+
+            if (this.IsInvalid())
             {
-                Email = request.Email,
-                Senha = request.Senha,
-                Status = Enum.EnumSituacaoJogador.Ativo
-            };
+                return null;
+            }
 
-            ValidarEmail(jogador.Email.Endereco);
+            jogador = _repositoryJogador.AdicionarJogador(jogador);
 
-            ValidarSenha(jogador.Senha);
-
-            Guid id = _repositoryJogador.AdicionarJogador(jogador);
-
-            return new AdicionarJogadorResponse()
-            {
-                Id = id,
-                Message = "Operação realizada com sucesso!"
-            };
+            return (AdicionarJogadorResponse)jogador;
         }
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
@@ -63,30 +62,47 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            var response = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
+            jogador = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
 
-            return response;
+            return (AutenticarJogadorResponse)jogador;
         }
 
-        private void ValidarEmail(string email)
+        public AlterarJogadorResponse AlterarJogador(AlterarJogadorRequest request)
         {
-            if (string.IsNullOrEmpty(email))
+            if (request == null)
             {
-                throw new Exception("Informe o email para continuar.");
+                AddNotification("AlterarJogadorResponse", Message.X0_E_OBRIGATORIO.ToFormat("AlterarJogadorResponse"));
+                return null;
             }
+
+            var jogador = _repositoryJogador.ObterJogadorPorId(request.Id);
+
+            if (jogador == null)
+            {
+                AddNotification("Id", Message.DADOS_NAO_ENCONTRADOS);
+                return null;
+            }
+
+            var nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+            var email = new Email(request.Email);
+
+            jogador.AlterarJogador(nome, email, jogador.Status);
+
+            AddNotifications(jogador);
+
+            if (IsInvalid())
+            {
+                return null;
+            }
+
+            _repositoryJogador.AlterarJogador(jogador);
+
+            return (AlterarJogadorResponse)jogador;
         }
 
-        private void ValidarSenha(string senha)
+        public IEnumerable<JogadorResponse> ListarJogador()
         {
-            if (string.IsNullOrEmpty(senha))
-            {
-                throw new Exception("Informe a senha para continuar.");
-            }
-
-            if (senha.Length <= 6)
-            {
-                throw new Exception("A senha deve ter mínimo 6 caracteres.");
-            }
+            return _repositoryJogador.ListarJogador().ToList().Select(jogador => (JogadorResponse)jogador);
         }
     }
 }

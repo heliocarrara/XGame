@@ -14,7 +14,17 @@ namespace XGame.AppConsole
             var service = new ServiceJogador();
             Console.WriteLine("Criamos a instância do serviço...");
 
-            AutenticarJogadorRequest request = new AutenticarJogadorRequest();
+            Autenticar(service);
+            Adicionar(service);
+
+            var result = service.ListarJogador();
+
+            Console.ReadKey();
+        }
+
+        private static void Autenticar(ServiceJogador service)
+        {
+            var request = new AutenticarJogadorRequest();
             Console.WriteLine("Agora criamos a instância do meu objeto request");
 
             request.Email = "Joao@gmail.com";
@@ -22,15 +32,37 @@ namespace XGame.AppConsole
 
             var response = service.AutenticarJogador(request);
 
-            if(service.IsInvalid())
+            if (service.IsInvalid())
             {
-                foreach(var notification in service.Notifications)
+                foreach (var notification in service.Notifications)
                 {
                     Console.WriteLine(notification.Message);
                 }
             }
+        }
 
-            Console.ReadKey();
+
+        private static void Adicionar(ServiceJogador service)
+        {
+            var request = new AdicionarJogadorRequest()
+            {
+                PrimeiroNome = "Helio",
+                UltimoNome = "Carrara",
+                Email = "email@email.com",
+                Senha = "123456"
+            };
+
+            Console.WriteLine("Agora criamos a instância do meu objeto request");
+
+            var response = service.AdicionarJogador(request);
+
+            if (service.IsInvalid())
+            {
+                foreach (var notification in service.Notifications)
+                {
+                    Console.WriteLine(notification.Message);
+                }
+            }
         }
     }
 }
