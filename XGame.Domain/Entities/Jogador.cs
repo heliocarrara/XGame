@@ -11,8 +11,6 @@ namespace XGame.Domain.Entities
 {
     public class Jogador : EntityBase
     {
-        public Guid Id { get; private set; }
-
         public Nome Nome { get; private set; }
 
         public Email Email { get; private set; }

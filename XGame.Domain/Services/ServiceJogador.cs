@@ -103,7 +103,13 @@ namespace XGame.Domain.Services
 
         public IEnumerable<JogadorResponse> ListarJogador()
         {
-            return _repositoryJogador.Listar().Select(jogador => (JogadorResponse)jogador).ToList();
+            return _repositoryJogador.Listar().Select(x => new JogadorResponse() 
+            { 
+                Id = x.Id, 
+                PrimeiroNome = x.Nome.PrimeiroNome,
+                UltimoNome = x.Nome.UltimoNome,
+                Email = x.Email.Endereco
+            }).ToList();
         }
 
         public ResponseBase ExcluirJogador(Guid id)
