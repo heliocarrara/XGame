@@ -33,7 +33,12 @@ namespace XGame.Domain.Services
 
             var jogador = new Jogador(nome, email, request.Senha);
 
-            AddNotifications(jogador, nome, email);
+            if(_repositoryJogador.Existe(x => x.Email.Endereco == request.Email))
+            {
+                AddNotification("E-mail", Message.JA_EXISTE_UM_X0_CHAMADO_X1.ToFormat("e-mail", request.Email));
+            }
+
+            AddNotifications(nome, email);
 
             if (this.IsInvalid())
             {
@@ -63,7 +68,7 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            jogador = _repositoryJogador.ObterPor(x => x.Email.Endereco == jogador.Email.Endereco, x => x.Senha == jogador.Senha);
+            jogador = _repositoryJogador.ObterPor(x => x.Email.Endereco == jogador.Email.Endereco && x.Senha == jogador.Senha);
 
             return (AutenticarJogadorResponse)jogador;
         }

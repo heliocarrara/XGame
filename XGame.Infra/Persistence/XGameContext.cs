@@ -14,7 +14,7 @@ namespace XGame.Infra.Persistence
 
         public IDbSet<Jogador> Jogadores { get; set; }
         public IDbSet<Plataforma> Plataformas { get; set; }
-        //public IDbSet<Jogo> Jogos { get; set; }
+        public IDbSet<Jogo> Jogos { get; set; }
         //public IDbSet<JogoPlataforma> JogosPlataforma { get; set; }
         //public IDbSet<MeuJogo> MeusJogos { get; set; }
 

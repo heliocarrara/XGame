@@ -62,10 +62,16 @@
     <Compile Include="Migrations\202402112320575_MapeandoPlataforma.designer.cs">
       <DependentUpon>202402112320575_MapeandoPlataforma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202402172335522_Jogo.cs" />
+    <Compile Include="Migrations\202402172335522_Jogo.designer.cs">
+      <DependentUpon>202402172335522_Jogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\Map\MapJogo.cs" />
     <Compile Include="Persistence\Map\MapPlataforma.cs" />
     <Compile Include="Persistence\Map\MapJogador.cs" />
     <Compile Include="Persistence\Repositories\Base\RepositoryBase.cs" />
+    <Compile Include="Persistence\Repositories\RepositoryJogo.cs" />
     <Compile Include="Persistence\Repositories\RepositoryJogador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transactions\IUnityOfWork.cs" />
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402112320575_MapeandoPlataforma.resx">
       <DependentUpon>202402112320575_MapeandoPlataforma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402172335522_Jogo.resx">
+      <DependentUpon>202402172335522_Jogo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
